@@ -14,4 +14,9 @@ describe('Bowling Game', function () {
     expect(game instanceof Game).toBe(true);
   });
 
+  it('should have a roll method', function () {
+    expect(game.roll).toBeDefined();
+    expect(game.roll).toBeFunction();
+  });
+
 });
